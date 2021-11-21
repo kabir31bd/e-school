@@ -7,6 +7,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    background-color: #007237;
+    background-image: url('images/SMIConBarBackground.png');
 }
 
 
@@ -24,318 +26,388 @@ a:hover {
     text-decoration: none;
 }
 
+/* *****************************************
+* Neale Armani - project
+*
+********************************************/
+.container .tl1 {
+    width: 50%;
+    float: left;
+}
 
+.container .tl2 {
+    width: 50%;
+    float: left;
+}
 
-.header-section {
+.maincont {
     width: 100%;
-    background: #F0FFF0;
+    height: 1420px;
+    position: relative;
 }
 
-.bg-light {
-    background: transparent !important;
+#logo-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 26.6%;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    z-index: 5000;
 }
 
-.header-section .navbar-light .navbar-nav .nav-link {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0px 0px 0px 15px;
-    /* top right bottom left*/
+@media screen and (max-width: 1600px) {
+    #logo-container {
+        width: 20%;
+    }
 }
 
-.header-section .navbar .btn-success {
+.nav1 {
+    width: 100%;
+    float: left;
+}
+
+.navbar {
+    background-color: royalblue;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar .bg-light {
+    background-color: royalblue;
+    font-style: normal;
+}
+
+header .nav-link {
     color: #fff;
-    background-color: #21B573;
-    border-color: #21B573;
+}
+
+.carouselExampleSlidesOnly {
+    width: 600px;
+    height: 450px;
+    position: relative;
+    z-index: 100;
+}
+
+.ENGLISHbox {
+    width: 250px;
+    height: 85px;
+    top: 5%;
+    right: 20px;
+    position: absolute;
+    border: 1px solid seagreen;
     border-radius: 30px;
-    padding: 8px 35px;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0px 0px 0px 20px;
-    /* top right bottom left*/
+    background: royalblue;
+    z-index: 1;
 }
 
-.header-section .navbar .btn-success:hover,
-.header-section .navbar .btn-success:focus {
-    color: #21B573;
-    background-color: transparent;
-    border-color: #21B573;
+.CONNECTIONbox {
+    width: 250px;
+    height: 85px;
+    top: 20%;
+    right: 20px;
+    position: absolute;
+    border: 1px solid seagreen;
+    border-radius: 30px;
+    background: royalblue;
+    z-index: 1;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-    color: rgba(0, 0, 0, .9);
-    border: 1px solid #000;
+.TICKETbox {
+    width: 250px;
+    height: 85px;
+    top: 35%;
+    right: 20px;
+    position: absolute;
+    border: 1px solid seagreen;
+    border-radius: 30px;
+    background: royalblue;
+    z-index: 1;
 }
 
-.banner {
+.TRANSFORMbox {
+    width: 250px;
+    height: 85px;
+    top: 51%;
+    right: 20px;
+    position: absolute;
+    border: 1px solid seagreen;
+    border-radius: 30px;
+    background: royalblue;
+    z-index: 1;
+}
+
+.ENROLbox {
+    width: 250px;
+    height: 85px;
+    top: 66%;
+    right: 20px;
+    position: absolute;
+    border: 1px solid seagreen;
+    border-radius: 30px;
+    background: royalblue;
+    z-index: 1;
+}
+
+
+.slide .carousel-inner .ENGLISHbox:hover{
+    cursor: pointer;
+}
+
+
+.slide .carousel-inner .CONNECTIONbox:hover{
+    cursor: pointer;
+}
+
+
+.slide .carousel-inner .TICKETbox:hover{
+    cursor: pointer;
+}
+
+
+.slide .carousel-inner .TRANSFORMbox:hover{
+    cursor: pointer;
+}
+
+.slide .carousel-inner .ENROLbox:hover{
+    cursor: pointer;
+}
+
+.slide .carousel-inner .ENGLISHbox span {
     width: 100%;
-    padding: 80px 0px;
+    float: left;
+    color: white;
+    padding: 32px 75px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
-.banner h5 {
+.slide .carousel-inner .CONNECTIONbox span {
+    width: 100%;
+    float: left;
+    color: white;
+    padding: 36px 36px;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.slide .carousel-inner .TICKETbox span {
+    width: 100%;
+    float: left;
+    color: white;
+    padding: 32px 75px;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.slide .carousel-inner .TRANSFORMbox span {
+    width: 100%;
+    float: left;
+    color: white;
+    padding: 32px 40px;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.slide .carousel-inner .ENROLbox span {
+    width: 100%;
+    float: left;
+    color: white;
+    padding: 32px 32px;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+
+.slogan-container h1 span {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+
+    font-style: italic;
+    font-size: 66px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Pinyon Script', cursive;
+
+}
+
+.address p {
+
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 20px 0px;
+
+}
+
+.logins {
+    margin: 55px 20px;
+}
+.logins .parentlogin p a{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 20px 0px;
+}
+
+.logins .studentlogin p a{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 20px 0px;
+}
+
+.logins .stafflogin p a{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 20px 0px;
+}
+
+.logins .boardlogin p a{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 20px 0px;
+}
+
+
+.achievements-container {
+    width: 100%;
+    height: 550px;
+}
+
+.text{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 40px 0px;
+    text-align: center;
+} 
+.infos{
+    text-align: center;
+    margin: 40px 0px;
+} 
+
+.achievements-container h4{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    line-height: 36px;
+    color: honeydew;
+}
+
+.achievements-container .counter{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 66px;
+    line-height: 76px;
+    color: honeydew;
+}
+
+.achievements-container p{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     line-height: 28px;
-    font-weight: 600;
-    color: #FD511A;
+    color: honeydew;
 }
 
-.banner h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 70px;
-    /* or 146% */
+.videos {
+    width: 100%;
+    float: left;
 }
 
-.banner h1 span {
-    color: #218573;
+.videos .vimg {
+    height: 250px;
+    padding: 10px 0px;
+}
+
+.socialmedia {
+    width: 100%;
+    float: left;
+}
+
+.socialmedia .fb {
+    width: 100%;
+    float: left;
+}
+
+.socialmedia .youtube {
+    width: 100%;
+    float: left;
+}
+
+.socialmedia .instagram {
+    width: 100%;
+    float: left;
 }
 
 
-.banner p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.banner .btn-success {
-
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    color: #fff;
-    background-color: #21B573;
-    border-color: #21B573;
-    border-radius: 30px;
-    padding: 8px 35px;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 20px 0px 0px 0px;
-    /* top right bottom left*/
-    text-transform: capitalize;
-}
-
-.banner .btn-success:hover,
-.banner .btn-success:focus {
-    color: #21B573;
-    background-color: transparent;
-    border-color: #21B573;
-}
-
-.feature {
+.social-icons {
     width: 100%;
     padding: 80px 0px;
-}
-
-.feature .inner-feature {
-    width: 100%;
-    padding: 40px 25px;
-    background: #F8FFFB;
     text-align: center;
-    border-radius: 10px;
+    display: inline-block;
 }
 
-.feature .inner-feature img {
-    width: 80px;
-    height: 85px;
-    margin: 0px 0px 20px;
-}
-
-
-.feature .inner-feature h4 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 34px;
-    color: #585859;
-    margin: 0px;
-}
-
-
-
-.feature .inner-feature p {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 26px;
-    color: #585859;
-    margin: 0px;
-}
-
-.feature .inner-feature:hover {
-    background: #FFFFFF;
-    box-shadow: 0px 20px 40px rgb(0, 0, 0, 0.1);
-}
-
-.online-course {
+.social-icons ul {
     width: 100%;
-    padding: 80px 0px;
-}
-
-.online-course .title {
-    font-style: normal;
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 70px;
-    text-align: center;
-    margin: 0px 0px 80px;
-}
-
-.online-course .card-body .card-title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #413960;
-}
-
-.online-course .card-body .card-text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #585858;
-    margin-bottom: 20px;
-}
-
-.online-course .card-body .btn-success {
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    color: #fff;
-    background-color: #21B573;
-    border-color: #21B573;
-    border-radius: 30px;
-    padding: 8px 35px;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 20px 0px 20px 0px;
-    /* top right bottom left*/
-    text-transform: capitalize;
-}
-
-.online-course .btn-success:hover,
-.online-course .btn-success:focus {
-    color: #21B573;
-    background-color: transparent;
-    border-color: #21B573;
-}
-
-.online-course .card {
-    padding: 20px;
-    background: #FFFFFF;
-    border: 0px;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-    border-radius: 18px;
-}
-
-.online-course .card .main-img {
-    border-radius: 11px;
-}
-
-.online-course .card-body .date {
-    width: 100%;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #585859;
-    margin: 35px 0px 0px;
-}
-
-.online-course .card-body .seat {
-    width: 100%;
-    margin: 35px 0px 0px;
-}
-
-.online-course .card-body .seat p {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #585859;
-    margin: 0px;
-}
-
-.testimonial {
-    width: 100%;
-    padding: 80px 0px;
-}
-
-.testimonial .title {
-    text-transform: capitalize;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 70px;
-    color: #413960;
-    text-align: center;
-    margin: 0px 0px 80px;
-}
-
-
-
-.testimonial img {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-}
-
-
-.testimonial p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #585859;
-    margin: 15px 0px 0px;
-}
-
-.footer-section {
-    width: 100%;
-    padding: 80px 0px 20px;
-    background: #282531;
-}
-
-
-.footer-section p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-
-}
-
-.widget {
-    width: 100%;
-    margin: 0px 0px 80px;
-}
-
-.widget h6 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    color: #FFFFFF;
-}
-
-.widget ul{
-    padding: 0px;
-}
-
-.widget ul li{
-    list-style: none;
-}
-
-
-.widget ul li a{
     display: block;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    margin: 0px 0px 10px;
 }
-.copyright {
-    font-size: 14px;
-    text-align: center;
-    color: #CDCDCD;
 
+.social-icons ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social-icons ul li a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 100%;
+    margin: 0px 15px;
+    background: #eee;
+    font-size: 35px;
+}
+
+.social-icons ul li a:hover {
+    color: #fff;
+    background: #007237;
+}
+
+.social-icons ul li a .fa-facebook {
+    color: blue;
+}
+
+.social-icons ul li a .fa-youtube {
+    color: blue;
+}
+
+.social-icons ul li a .fa-twitter {
+    color: green;
 }
