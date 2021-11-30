@@ -1,9 +1,10 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0px 0px;
+    margin: 0px 0px;
 }
 
 body {
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -30,208 +31,274 @@ a:hover {
 * Neale Armani - project
 *
 ********************************************/
-.container .tl1 {
-    width: 50%;
-    float: left;
-}
-
-.container .tl2 {
-    width: 50%;
-    float: left;
-}
 
 .maincont {
     width: 100%;
-    height: 1420px;
+    height: 2000px;
     position: relative;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
-#logo-container {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 26.6%;
-    padding: 0 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    z-index: 5000;
-}
-
-@media screen and (max-width: 1600px) {
-    #logo-container {
-        width: 20%;
-    }
-}
-
-.nav1 {
+.headertop {
     width: 100%;
-    float: left;
-}
+    height: 40px;
+    background: linear-gradient(to left, #009933 0%, #99ff66 100%);    
+    margin: 0px 0px;
+    position: relative; 
+    z-index: 5000;
 
+}
 .navbar {
-    background-color: royalblue;
-    font-style: normal;
+    position: relative;
+    margin: 0px 0px;
+    height: 65px;
     font-family: 'Poppins', sans-serif;
-}
+    font-size: 14px;
+    line-height: 24px;
 
-
-.navbar .bg-light {
-    background-color: royalblue;
-    font-style: normal;
+    font-family: Open Sans, Lucida sans, Arial !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: royalblue !important;
+    
+    transition: all 0.4s;
 }
 
 header .nav-link {
-    color: #fff;
+    color: royalblue;
+    
 }
 
-.carouselExampleSlidesOnly {
-    width: 600px;
-    height: 450px;
+
+
+.headertop .leftside {
+    width: 70%;
+    float: left;
+    color: #99ff66;
+}
+
+.headertop .rightside {
+    width: 30%;
+    float: left;
+}
+
+
+.headertop .imgcontainer {
     position: relative;
-    z-index: 100;
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+    top: -20px;
+    z-index: 5;
+}
+
+.headertop .imgcontainer .overlay {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+.social-icons {
+    width: 100%;
+    padding: 0px 0px;
+    text-align: center;
+    display: inline-block;
+}
+
+.social-icons ul {
+    width: 100%;
+    display: block;
+}
+
+.social-icons ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.social-icons ul li a {
+    display: block;
+    width: 50px;
+    height: 30px;
+    line-height: 24px;
+    margin: 5px 0px;
+    padding: 2px 0px;
+    font-size: 20px;
+    border-radius: 100%;
+    background: linear-gradient(to left, #fff 00%, #99ff66 100%);
+}
+
+
+.carousel {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 0px 0px;
+    height: 410px;
+    padding: 0px 0px 0px 0px;
+}
+.slide {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 0px -10px;
+    height: 410px;
+}
+
+.carousel .carousel-inner{
+    width: 100%;
+    height: 450px;
+    margin: 0px -10px;
 }
 
 .ENGLISHbox {
-    width: 250px;
-    height: 85px;
+    width: 175px;
+    height: 60px;
     top: 5%;
     right: 20px;
     position: absolute;
-    border: 1px solid seagreen;
-    border-radius: 30px;
-    background: royalblue;
+    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    border: 2px solid white;
+    border-radius: 30px;    
     z-index: 1;
+    font-family: 'Poppins', sans-serif;
 }
 
 .CONNECTIONbox {
-    width: 250px;
-    height: 85px;
+    width: 175px;
+    height: 60px;
     top: 20%;
     right: 20px;
     position: absolute;
-    border: 1px solid seagreen;
+    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    border: 2px solid white;
     border-radius: 30px;
-    background: royalblue;
     z-index: 1;
+    font-family: 'Poppins', sans-serif;
 }
 
 .TICKETbox {
-    width: 250px;
-    height: 85px;
+    width: 175px;
+    height: 60px;
     top: 35%;
     right: 20px;
     position: absolute;
-    border: 1px solid seagreen;
+    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    border: 2px solid white;
     border-radius: 30px;
-    background: royalblue;
+    
     z-index: 1;
 }
 
 .TRANSFORMbox {
-    width: 250px;
-    height: 85px;
+    width: 175px;
+    height: 60px;
     top: 51%;
     right: 20px;
     position: absolute;
-    border: 1px solid seagreen;
+    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    border: 2px solid white;
     border-radius: 30px;
-    background: royalblue;
+    
     z-index: 1;
 }
 
 .ENROLbox {
-    width: 250px;
-    height: 85px;
+    width: 175px;
+    height: 60px;
     top: 66%;
     right: 20px;
     position: absolute;
-    border: 1px solid seagreen;
+    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    border: 2px solid white;
     border-radius: 30px;
-    background: royalblue;
+    
     z-index: 1;
 }
 
 
 
-.slide .carousel-inner .ENGLISHbox:hover{
+.carousel-inner .ENGLISHbox:hover{
     cursor: pointer;
 }
 
 
-.slide .carousel-inner .CONNECTIONbox:hover{
+.carousel-inner .CONNECTIONbox:hover{
     cursor: pointer;
 }
 
 
-.slide .carousel-inner .TICKETbox:hover{
+.carousel-inner .TICKETbox:hover{
     cursor: pointer;
 }
 
 
-.slide .carousel-inner .TRANSFORMbox:hover{
+.carousel-inner .TRANSFORMbox:hover{
     cursor: pointer;
 }
 
-.slide .carousel-inner .ENROLbox:hover{
+.carousel-inner .ENROLbox:hover{
     cursor: pointer;
 }
 
-.slide .carousel-inner .ENGLISHbox span {
+.carousel-inner .ENGLISHbox span {
     width: 100%;
     float: left;
-    color: white;
-    padding: 32px 75px;
-    font-size: 24px;
+    color: yellow;
+    padding: 18px 40px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
 }
 
-.slide .carousel-inner .CONNECTIONbox span {
+.carousel-inner .CONNECTIONbox span {
     width: 100%;
     float: left;
-    color: white;
-    padding: 36px 36px;
-    font-size: 24px;
-    font-weight: 900;
+    color: yellow;
+    padding: 18px 12px;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
-.slide .carousel-inner .TICKETbox span {
+.carousel-inner .TICKETbox span {
     width: 100%;
     float: left;
-    color: white;
-    padding: 32px 75px;
-    font-size: 24px;
-    font-weight: 900;
+    color: yellow;
+    padding: 18px 50px;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
-.slide .carousel-inner .TRANSFORMbox span {
+.carousel-inner .TRANSFORMbox span {
     width: 100%;
     float: left;
-    color: white;
-    padding: 32px 40px;
-    font-size: 24px;
-    font-weight: 900;
+    color: yellow;
+    padding: 18px 20px;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
-.slide .carousel-inner .ENROLbox span {
+.carousel-inner .ENROLbox span {
     width: 100%;
     float: left;
-    color: white;
-    padding: 32px 32px;
-    font-size: 24px;
-    font-weight: 900;
+    color: yellow;
+    padding: 18px 15px;
+    font-size: 20px;
+    font-weight: 600;
     text-transform: capitalize;
 }
 
 
 
-.slide .carousel-inner .ENGLISHbox span:hover {
+.carousel-inner .ENGLISHbox span:hover {
     color: #FFD51D;
     background: #007237;
     border-radius: 30px;
@@ -240,28 +307,80 @@ header .nav-link {
 }
 
 
-.slide .carousel-inner .CONNECTIONbox span:hover {
+.carousel-inner .CONNECTIONbox span:hover {
     color: #FFD51D;
     background: #007237;
     border-radius: 30px;
 }
 
-.slide .carousel-inner .TICKETbox span:hover {
+.carousel-inner .TICKETbox span:hover {
     color: #FFD51D;
     background: #007237;
     border-radius: 30px;
 }
 
-.slide .carousel-inner .TRANSFORMbox span:hover {
+.carousel-inner .TRANSFORMbox span:hover {
     color: #FFD51D;
     background: #007237;
     border-radius: 30px;
 }
 
-.slide .carousel-inner .ENROLbox span:hover {
+.carousel-inner .ENROLbox span:hover {
     color: #FFD51D;
     background: #007237;
     border-radius: 30px;
+}
+
+
+.carousel .carousel-inner .container1 {
+    float: left;
+    width: 50%;
+    height: 100%;
+    top: 50px;
+    background-color: #DDD;
+}
+.carousel .carousel-inner .container1 .carousel-item{
+    height: 100%;
+}
+
+.carousel .carousel-inner .container2 {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 75px 20px;
+    background-color: #051F46;    
+    z-index: 500;
+}
+
+#range-logo {
+    background-image:url(../images/play-marker-02.png);
+    display:block;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100%;
+    width:100%;
+}
+
+.carousel .carousel-inner .container2 h1 {
+    color: #fff;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.carousel .carousel-inner .container2 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.carousel .carousel-inner .container2 h2 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
 }
 
 .slogan-container {
@@ -322,52 +441,6 @@ header .nav-link {
 }
 
 
-.achievements-container {
-    width: 100%;
-    height: 550px;
-    position: relative;
-    z-index: 0;
-    margin-top: 0px;
-}
-
-.text{
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    line-height: 24px;
-    color: honeydew;
-    margin: 40px 0px;
-    text-align: center;
-} 
-.infos{
-    text-align: center;
-    margin: 40px 0px;
-} 
-
-.achievements-container h4{
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    line-height: 36px;
-    color: honeydew;
-}
-
-.achievements-container .counter{
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    font-size: 66px;
-    line-height: 76px;
-    color: honeydew;
-}
-
-.achievements-container p{
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 28px;
-    color: honeydew;
-}
-
 
 .fbsb {
     position: fixed;
@@ -412,13 +485,149 @@ header .nav-link {
 
 .videos {
     width: 100%;
+    height: 100%;
     float: left;
+    position: relative;
+    margin: 25px 0px 0px;
+}
+.videos h1 {
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    color: honeydew;
+    margin: 15px 0px;
+    text-align: center;
+    background-image: url(../images/why-igcse-bigx.png);
 }
 
 .videos .vimg {
     height: 250px;
-    padding: 10px 0px;
+    padding: 0px 0px;
+    margin: 0px 5px;
 }
+
+img.vimg {
+    padding: 0px 5px;
+}
+
+.videos .vh1 h1 {
+    color: #051F46;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.achievements-container{
+    width: 100%;
+    height: 500px;
+}
+article#achievements {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-image:url(../images/achievements-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    margin: 0px;
+}
+
+.text{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 0px 0px;
+    padding: 80px 0px;
+    text-align: center;
+    position: relative;
+} 
+.infos{
+    text-align: center;
+    margin: 40px 0px;
+} 
+.whyus {
+    background-color:#051F46;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    line-height: 24px;
+    color: honeydew;
+    margin: 0px 0px;
+    padding: 20px 0px;
+    text-align: center;
+    position: relative;
+}
+.whyus h5{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: honeydew;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    text-align: left;
+    position: relative;
+}
+.whyus .whTitle p{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: honeydew;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    position: relative;
+}
+
+.whyus .whTitleD p{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: honeydew;
+    margin: 0px 0px;
+    padding: 20px 0px;
+    text-align: left;
+    position: relative;
+}
+
+.whyus img {
+    width: 100%;
+    height: 250px;
+    margin: 0px 20px;
+}
+
+.achievements-container h4{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    line-height: 36px;
+    color: honeydew;
+}
+
+.achievements-container .counter{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 66px;
+    line-height: 76px;
+    color: honeydew;
+}
+
+.achievements-container  p{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: honeydew;
+}
+
 
 .socialmedia {
     width: 100%;
@@ -440,9 +649,11 @@ header .nav-link {
     float: left;
 }
 
+footer {
+    position: relative;
+}
 
 .address p {
-
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -451,7 +662,7 @@ header .nav-link {
     margin: 20px 0px;
 
 }
-
+/* 
 .social-icons {
     width: 100%;
     padding: 40px 0px;
@@ -495,4 +706,4 @@ header .nav-link {
 
 .social-icons ul li a .fa-twitter {
     color: green;
-}
+} */

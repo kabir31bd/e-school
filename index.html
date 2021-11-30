@@ -26,34 +26,54 @@
 <body>
     <div class="container-fluid maincont">
         <!-- Main Header -->
-        <header>
-            <!-- logo container -->
-            <div class="logo-container">
+        <!-- Top bar start -->
 
-            </div>
-            <!-- logo container end -->
-            <!-- Top Header Start -->
+        <div class="row">
             <div class="headertop">
-                <div class="row" id="topbar" hidden>
-                    <div class="col-xs-12 col-sm-6">
-                        <img style="max-width:620px;" src="images/logo.jpg" alt="Logo" width="100%" height="100%">
+                <div class="leftside">
+                    <P>left side</P>
+                    <div id="imgcontainer" class="imgcontainer">
+                        <img class="overlay" src="images/logo-qld-aust.png" alt="stickylogo">
                     </div>
-                    <div class="hidden-xs col-sm-6" align="right">
-                        <a href="edexcel.html">
-                            <img style="max-width:224px;" src="images/iloveiqra.png" alt="Logo" width="100%"
-                                height="100%"></a>
-                        <img style="max-width:100px;" src="images/BritishCouncil.png" alt="Logo" width="100%"
-                            height="100%">
+                </div>
+                <div class="rightside">
+
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube " aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram " aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-whatsapp " aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- Top Header End -->
 
-            <!-- Menu Start -->
-            <nav class="navbar navbar-expand-lg navbar-lightx bg-lightx">
+        </div>
+
+        <!-- top bar end -->
+        <!-- Menu Start -->
+        <div class="row">
+            <nav id="navbar_top" class="navbar navbar-expand-lg navbar-lightx bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="index.html"><img src="images/logo-small-v2.png" alt="brandlogo"
-                            width="220px" height="65px"></a>
+                            width="130px" height="65px"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -92,21 +112,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">ONLINE ENROLMENT</a>
                             </li>
-                            <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Career Guidance
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">LOGIN</a></li>
-                                <li><a class="dropdown-item" href="#">OUR GUIDANCE PHILOSOPHY</a></li>
-                                <li><a class="dropdown-item" href="#">ACTIVITIES</a></li>
-                                <li><a class="dropdown-item" href="#">STUDENT CHOICES</a></li>
-                                <li><a class="dropdown-item" href="#">SCHOOL PLACEMENTS</a></li>
-                                <li><a class="dropdown-item" href="#">CAREER GUIDANCE CALENDER</a></li>
-                            </ul>
-                        </li> -->
-
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item " hidden>
@@ -119,59 +124,60 @@
                     </div>
                 </div>
             </nav>
-            <!-- sticky logo -->
-            <div class="logo-container" id="myHeader" hidden>
-                <img src="images/logo-qld-aust.png" alt="">
-            </div>
-            <!-- sticky logo end -->
-            <!-- <div class="menu">
-
         </div>
-        <div class="banner">
-
-        </div> -->
-            <!-- Menu End -->
-
-        </header>
-
         <!-- CAROUSEL START-->
 
+        <div class="row">
+            <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="ENGLISHbox">
+                        <span>ENGLISH</span>
+                    </div>
+                    <div class="CONNECTIONbox">
+                        <span>CONNECTION</span>
+                    </div>
+                    <div class="TICKETbox">
+                        <span>TICKET</span>
+                    </div>
+                    <div class="TRANSFORMbox">
+                        <span>TRANSFORM</span>
+                    </div>
+                    <div class="ENROLbox">
+                        <span>ENROL ONLINE</span>
+                    </div>
+                    <div class="container1">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="images/slide1.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo"
+                                width="50%" height="100%">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/slide2.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo"
+                                width="50%" height="100%">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/slide3.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo"
+                                width="50%" height="100%">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/slide4.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo"
+                                width="50%" height="100%">
+                        </div>
+                    </div>
+                    <div class="container2">
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="ENGLISHbox">
-                    <span>ENGLISH</span>
-                </div>
-                <div class="CONNECTIONbox">
-                    <span>CONNECTION</span>
-                </div>
-                <div class="TICKETbox">
-                    <span>TICKET</span>
-                </div>
-                <div class="TRANSFORMbox">
-                    <span>TRANSFORM</span>
-                </div>
-                <div class="ENROLbox">
-                    <span>ENROL ONLINE</span>
-                </div>
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="images/slide1.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo" width="100%"
-                        height="100%">
+                        <a href="http://ran.ge/" title="Professional WordPress Development" id="range-logo">
 
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/slide2.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo" width="100%"
-                        height="100%">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/slide3.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo" width="100%"
-                        height="100%">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/slide4.jpg" class="d-block w-100" style="max-width:1920px;" alt="Logo" width="100%"
-                        height="100%">
-                </div>
+                            <h1>
+                                Another Studentcare<br>landmark
+                            </h1>
+                            <p>JCI acceditation reaffirms our school and school networks commitment to student care</p>
+                            <h2>QUALITY STUDENTCARE</h2>
 
+                        </a>
+
+
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Home Slider -->
@@ -333,22 +339,327 @@
         <!-- CAROUSEL END -->
         <!-- ad section -->
         <!-- slogan start -->
-        <section id="slogan-container" class="slogan-container">
-            <article id="slogan">
-                <p>
-                <h1><span>Establish 1875
-                        <!-- <img src="images/establish.png" alt="" width="100%" height="85px"> -->
+        <div class="row">
+            <section id="slogan-container" class="slogan-container" hidden>
+                <article id="slogan">
+                    <p>
+                    <h1><span>Establish 1875
+                            <!-- <img src="images/establish.png" alt="" width="100%" height="85px"> -->
 
-                    </span>
-                </h1>
-                </p>
-            </article>
-        </section>
+                        </span>
+                    </h1>
+                    </p>
+                </article>
+            </section>
+        </div>
         <!-- slogan -->
+        <!-- Our programes -->
+        <!-- section videos -->
 
+        <div class="row">
+
+            <section class="videos">
+                <div class="row" hidden>
+                    <h1>Our programes</h1>
+                </div>
+                <div class="row" hidden>
+                    <div class="col-lg-3 img1">
+                        <img src="images/why-igcse-big.png" alt="" class="vimg">
+                    </div>
+                    <div class="col-lg-3 img1">
+                        <img src="images/why-iqra-clear.png" alt="" class="vimg">
+                    </div>
+                    <div class="col-lg-3 img1">
+                        <img src="images/why-islamic-clear.png" alt="" class="vimg">
+                    </div>
+                    <div class="col-lg-3 img1">
+                        <img src="images/why-montessori-clear.png" alt="" class="vimg">
+                    </div>
+                </div>
+
+                <!--Desktop View Start -->
+                <div class="col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center text-uppercase vh1 bg-white">
+                            <h1>Our Programmes</h1>
+                        </div>
+                    </div>
+                    <div class="row pacadmicmiddel">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+                        </div>
+                    </div>
+                    <div class="row hidden-xs hidden-sm bg-white">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-12 text-right">
+                                    <div class="row marginacademicbtm">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 mainitems" id="NAM">
+                                            <a href="/academics/Pages/nursing.aspx" class="hrefapanel"> NURSING AND
+                                                MIDWIFERY </a>
+                                            <p class="margin0"> A leader in nursing and midwifery education for more
+                                                than 30 years </p>
+                                            <div style="display: block;">
+                                                <a href="/sonampk/Pages/home.aspx" target="_blank" class="ahrefsub">
+                                                    Pakistan </a> |
+                                                <a href="/sonamea/Pages/home.aspx" target="_blank" class="ahrefsub">
+                                                    East Africa </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row marginacademicbtm">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 mainitems" id="M">
+                                            <a href="/academics/Pages/medicine.aspx" class="hrefapanel"> MEDICINE </a>
+                                            <p class="margin0">Developing outstanding clinicians and ground-breaking
+                                                researchers</p>
+                                            <div style="display: block;">
+                                                <a href="/mcpk/Pages/home.aspx" target="_blank" class="ahrefsub">
+                                                    Pakistan </a> |
+                                                <a href="/mcea/Pages/home.aspx" target="_blank" class="ahrefsub"> East
+                                                    Africa </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row marginacademicbtm">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 mainitems" id="ED">
+                                            <a href="/academics/Pages/education-development.aspx" class="hrefapanel">
+                                                EDUCATIONAL DEVELOPMENT </a>
+                                            <p class="margin0">Dedicated to improving school performance through better
+                                                teaching and management</p>
+                                            <div style="display: block;">
+                                                <a href="/iedpk/Pages/home.aspx" target="_blank" class="ahrefsub">
+                                                    Pakistan </a> |
+                                                <a href="/iedea/Pages/home.aspx " target="_blank" class="ahrefsub"> East
+                                                    Africa </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <div class="carousel-item active" data-bs-interval="3000">
+                                        <img src="images/why-igcse-big.png" class="d-block w-100"
+                                            style="max-width:1920px;" alt="Logo" width="50%" height="100%">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="images/why-iqra-clear.png" class="d-block w-100"
+                                            style="max-width:1920px;" alt="Logo" width="50%" height="100%">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="images/slide3.jpg" class="d-block w-100" style="max-width:1920px;"
+                                            alt="Logo" width="50%" height="100%">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="images/slide4.jpg" class="d-block w-100" style="max-width:1920px;"
+                                            alt="Logo" width="50%" height="100%">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <div class="row marginacademicbtm">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 mainitems" id="MS">
+                                            <a href="/ismc" class="hrefapanel"> MUSLIM CIVILISATIONS </a>
+                                            <p class="margin0">Our MA in Muslim Cultures attracts students and scholars
+                                                from around the world</p>
+                                            <div style="display: block;">
+                                                <a href="/ismc/Pages/home.aspx" target="_blank" class="ahrefsub"> United
+                                                    Kingdom </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row marginacademicbtm">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 mainitems" id="MAC">
+                                            <a href="https://www.aku.edu/gsmc/Pages/home.aspx" class="hrefapanel"> MEDIA
+                                                AND COMMUNICATIONS </a>
+                                            <p class="margin0">Fostering ethics, diversity and independence in the media
+                                            </p>
+                                            <div style="display: block;">
+                                                <a href="https://www.aku.edu/gsmc/Pages/home.aspx" target="_blank"
+                                                    class="ahrefsub"> East Africa </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row marginacademicbtm">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 mainitems" id="EAI">
+                                            <a href="/eai" class="hrefapanel">EAST AFRICA INSTITUTE </a>
+                                            <p class="margin0">A regional and interdisciplinary approach to developing
+                                                new solutions for East Africa</p>
+                                            <div style="display: block;">
+                                                <a href="/eai/Pages/home.aspx" target="_blank" class="ahrefsub"> East
+                                                    Africa </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Desktop View END -->
+                <!--Desktop View Start -->
+                <div class="col-md-12 col-sm-12 col-xs-12 visible-xs visible-sm" hidden>
+                    <div class="panel-group visible-xs visible-sm" id="Accordion-Academic">
+                        <!-- FIRST ITEM -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading-academic">
+                                <span class="Academic-AccordianHeadingGrey">
+                                    <a data-toggle="collapse" data-parent="#Accordion-Academic"
+                                        class="Academic-AccordianPanelGrey" href="#collapseone">
+                                        <div class="ArrowDOWN"></div>
+                                        <div class="ArrowUP" style="display: none;"></div>
+                                        NURSING AND MIDWIFERY
+                                    </a>
+                                </span>
+
+                            </div>
+                            <div id="collapseone" class="panel-collapse collapse">
+                                <div class="panel-body Academic-AccordianText">
+
+
+                                    <a href="/sonampk/Pages/home.aspx" target="_blank">Pakistan</a>
+                                    |
+                                    <a href="/sonamea/Pages/home.aspx" target="_blank">East Africa</a>
+
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- SECOND ITEM -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading-academic">
+                                <span class="Academic-AccordianHeadingGrey">
+                                    <a data-toggle="collapse" data-parent="#Accordion-Academic"
+                                        class="Academic-AccordianPanelGrey" href="#collapsetwo">
+                                        <div class="ArrowDOWN"></div>
+                                        <div class="ArrowUP" style="display: none;"></div>
+                                        MEDICINE
+                                    </a>
+                                </span>
+
+                            </div>
+                            <div id="collapsetwo" class="panel-collapse collapse">
+                                <div class="panel-body Academic-AccordianText">
+
+                                    <a href="/mcpk/Pages/home.aspx" target="_blank">Pakistan</a> |
+                                    <a href="/mcea/Pages/home.aspx" target="_blank">East Africa</a>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- THIRD ITEM -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading-academic">
+                                <span class="Academic-AccordianHeadingGrey">
+                                    <a data-toggle="collapse" data-parent="#Accordion-Academic"
+                                        class="Academic-AccordianPanelGrey" href="#collapsethree">
+                                        <div class="ArrowDOWN"></div>
+                                        <div class="ArrowUP" style="display: none;"></div>
+                                        EDUCATIONAL DEVELOPMENT
+                                    </a>
+                                </span>
+
+                            </div>
+                            <div id="collapsethree" class="panel-collapse collapse">
+                                <div class="panel-body Academic-AccordianText">
+
+                                    <a href="/iedpk/Pages/home.aspx" target="_blank">Pakistan</a> |
+                                    <a href="/iedea/Pages/home.aspx" target="_blank">East Africa</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FOURTH ITEM -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading-academic">
+                                <span class="Academic-AccordianHeadingGrey">
+                                    <a data-toggle="collapse" data-parent="#Accordion-Academic"
+                                        class="Academic-AccordianPanelGrey" href="#collapsefour">
+                                        <div class="ArrowDOWN"></div>
+                                        <div class="ArrowUP" style="display: none;"></div>
+                                        MUSLIM CIVILISATIONS
+                                    </a>
+                                </span>
+
+                            </div>
+                            <div id="collapsefour" class="panel-collapse collapse">
+                                <div class="panel-body Academic-AccordianText">
+
+                                    <a href="/ismc/Pages/home.aspx" target="_blank">United Kingdom</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FIFTH ITEM -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading-academic">
+                                <span class="Academic-AccordianHeadingGrey">
+                                    <a data-toggle="collapse" data-parent="#Accordion-Academic"
+                                        class="Academic-AccordianPanelGrey" href="#collapsefifth">
+                                        <div class="ArrowDOWN"></div>
+                                        <div class="ArrowUP" style="display: none;"></div>
+                                        MEDIA AND COMMUNICATIONS
+                                    </a>
+                                </span>
+
+                            </div>
+                            <div id="collapsefifth" class="panel-collapse collapse">
+                                <div class="panel-body Academic-AccordianText">
+
+                                    <a href="https://www.aku.edu/gsmc/Pages/home.aspx" target="_blank">East Africa</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SIXTH ITEM -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading-academic">
+                                <span class="Academic-AccordianHeadingGrey">
+                                    <a data-toggle="collapse" data-parent="#Accordion-Academic"
+                                        class="Academic-AccordianPanelGrey" href="#collapsesixth">
+                                        <div class="ArrowDOWN"></div>
+                                        <div class="ArrowUP" style="display: none;"></div>
+                                        EAST AFRICA INSTITUTE
+                                    </a>
+                                </span>
+
+                            </div>
+                            <div id="collapsesixth" class="panel-collapse collapse">
+                                <div class="panel-body Academic-AccordianText">
+
+                                    <a href="/eai/Pages/home.aspx" target="_blank">East Africa</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--Desktop View Start -->
+
+
+            </section>
+
+        </div>
+
+
+        <!-- section videos end-->
+        <!-- Our programes end -->
         <!-- Achievements -->
-        <section id="achievements-container" class="achievements-container"
-            style="background: transparent url(https://www.twgs.qld.edu.au/wp-content/themes/toowoomba/images/achievements-bg.jpg) no-repeat center bottom;">
+        <section id="achievements-container" class="achievements-container">
             <article id="achievements">
 
                 <!-- Text -->
@@ -388,95 +699,239 @@
             </article>
         </section>
 
-
-        <!-- ad section end -->
-        <!-- section videos -->
-        <section class="container-fluid videos">
+        <div class="container-fiuld">
             <div class="row">
-                <div class="col-lg-3">
-                    <img src="images/why-igcse-big.png" alt="" class="vimg">
-                </div>
-                <div class="col-lg-3">
-                    <img src="images/why-iqra-clear.png" alt="" class="vimg">
-                </div>
-                <div class="col-lg-3">
-                    <img src="images/why-islamic-clear.png" alt="" class="vimg">
-                </div>
-                <div class="col-lg-3">
-                    <img src="images/why-montessori-clear.png" alt="" class="vimg">
+                <div class="whyus">
+                    <h1>Why US</h1>
+                    <div class="whTitle">
+                        <p>A Cambridge education prepares students for life, helping them <br>
+                            develop an informed curiosity and a lasting passion for learning. <br>
+                            Schools can shape a Cambridge curriculum around how they want their students to learn, <br>
+                            helping them discover new abilities and a wider world. Cambridge students <br>
+                            develop the skills they need to achieve at school, university and work.</p>    
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-3">
+                            <img src="images/why1.jpg" alt="">
+                            <h5>Cambridge education</h5>
+                            <div class="whTitleD">
+                            <p>Discover an education that gives students the skills
+                                they need for life, helping them achieve at school,
+                                university and work.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/why2.jpg" alt="">
+                            <h5>Where are Cambridge qualifications accepted?</h5>
+                            <div class="whTitleD">
+                            <p>Discover an education that gives students the skills
+                                they need for life, helping them achieve at school,
+                                university and work.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div> 
+                    
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-3">
+                            <img src="images/why3.jpg" alt="">
+                            <h5>Support for schools</h5>
+                            <div class="whTitleD">
+                            <p>We are here to support you with everything 
+                                you need to deliver our programmes and qualifications 
+                                successfully.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/why4.jpg" alt="">
+                            <h5>Information for parents and students</h5>
+                            <div class="whTitleD">
+                            <p>Find out how we prepare students for life, ready 
+                                to tackle the demands of tomorrow’s world.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-3">
+                            <img src="images/why5.jpg" alt="">
+                            <h5>Join Cambridge</h5>
+                            <div class="whTitleD">
+                            <p>When you join us you will be part of a global 
+                                community of schools working to equip learners 
+                                for success in our changing world.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/why6.jpg" alt="">
+                            <h5>Cambridge Associates</h5>
+                            <div class="whTitleD">
+                            <p>Cambridge Associates are education organisations 
+                                that work with us to deliver the Cambridge Pathway to individual 
+                                schools, colleges or directly to learners.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+
                 </div>
             </div>
-        </section>
-        <!-- section videos end-->
+        </div>
+
+        <!-- ad section end -->
         <!-- footer images -->
         <!-- footer images end-->
         <!-- footer -->
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="logo">
-                            <a href="index.html"><img src="images/logo-qld-aust (1).png" alt="brandlogo" width="220px"
-                                    height="150px"></a>
-                        </div>
+        <div class="container-fiuld">
+            <div class="row">
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo-qld-aust (1).png" alt="brandlogo"
+                                            width="220px" height="150px"></a>
+                                </div>
 
-                        <div class="address">
-                            <p>
-                                Ph: 07 4687 2500<br>
-                                International: +617 4687 2500<br>
-                                24 Margaret Street, Toowoomba, QLD, <br>4350 Australia
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
+                                <div class="address">
+                                    <p>
+                                        Ph: 07 4687 2500<br>
+                                        International: +617 4687 2500<br>
+                                        24 Margaret Street, Toowoomba, QLD, <br>4350 Australia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
 
-                        <div class="social-icons">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-youtube " aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram " aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-whatsapp " aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                                <!-- <div class="social-icons">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-youtube " aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram " aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-whatsapp " aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="logins">
+                                    <div class="parentlogin">
+                                        <p><a href="#">Parent Login</a></p>
+                                    </div>
+                                    <div class="studentlogin">
+                                        <p><a href="#">Student Login</a></p>
+                                    </div>
+                                    <div class="stafflogin">
+                                        <p><a href="#">Staff Login</a></p>
+                                    </div>
+                                    <div class="boardlogin">
+                                        <p><a href="#">Board of Trusees Login</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="logins">
-                            <div class="parentlogin">
-                                <p><a href="#">Parent Login</a></p>
-                            </div>
-                            <div class="studentlogin">
-                                <p><a href="#">Student Login</a></p>
-                            </div>
-                            <div class="stafflogin">
-                                <p><a href="#">Staff Login</a></p>
-                            </div>
-                            <div class="boardlogin">
-                                <p><a href="#">Board of Trusees Login</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </footer>
+
             </div>
-        </footer>
+        </div>
     </div>
     <!-- footer end-->
     <!-- Optional JavaScript; choose one of the two! -->
+
+    <script type="text/javascript">
+
+        // var header = document.getElementById("imgcontainer");
+        // function myFunction() {
+        //     var x = document.getElementById("imgcontainer");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //     } else {
+        //         x.style.display = "none";
+        //     }
+        // }
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("imgcontainer").style.top = "-450px";
+                document.getElementById("imgcontainer").hide();
+            } else {
+                document.getElementById("imgcontainer").style.top = "0";
+            }
+        }
+
+
+
+        // var prevScrollpos = window.pageYOffset;
+        // window.onscroll = function () {
+
+        //     var currentScrollpos = window.pageYOffset;
+        //     if (prevScrollpos > currentScrollpos) {                
+        //         if (header.style.display === "none") {
+        //             header.style.display = "block";
+        //         } else {
+        //             header.style.display = "none";
+        //         }
+        //     } else {
+        //         header.style.hidden = "true";
+        //     }
+
+        //     prevScrollpos = currentScrollpos;
+
+        // }
+
+        /*
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() > 50) {
+                document.getElementById("imgcontainer").fadeOut();
+            }
+            else {
+                document.getElementById("imgcontainer").fadeIn();
+            }
+        });
+        */
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                    //document.body.style.position = "Fixed"
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        });
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
