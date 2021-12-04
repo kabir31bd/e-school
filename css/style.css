@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    background-color: #007237;
+    background-color: #008300;
     background-image: url('images/SMIConBarBackground.png');
 }
 
@@ -43,12 +43,18 @@ a:hover {
 .headertop {
     width: 100%;
     height: 40px;
-    background: linear-gradient(to left, #009933 0%, #99ff66 100%);    
+    background: linear-gradient(to left, #008300 30%, #99ff66 100%);    
     margin: 0px 0px;
     position: relative; 
     z-index: 5000;
-
 }
+
+.brandlogo{
+    width: 80px;
+    height:80px;
+    padding: 10px 10px;
+}
+
 .navbar {
     position: relative;
     margin: 0px 0px;
@@ -56,40 +62,44 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
-
+    background-color: #FFFFFF;
     font-family: Open Sans, Lucida sans, Arial !important;
     text-transform: uppercase;
     font-weight: 600;
-    color: royalblue !important;
-    
+    color: #001aff !important;
     transition: all 0.4s;
 }
 
 header .nav-link {
-    color: royalblue;
+    color: #001aff;
     
 }
 
 
 
 .headertop .leftside {
-    width: 70%;
+    width: 75%;
     float: left;
     color: #99ff66;
 }
 
 .headertop .rightside {
-    width: 30%;
+    width: 25%;
     float: left;
+    
 }
 
 
 .headertop .imgcontainer {
     position: relative;
     background-size: cover;
-    width: 300px;
-    height: 450px;
-    top: -20px;
+    background: rgba(250, 244, 244, 0.733);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    opacity: 88%;
+    width: 250px;
+    height: 330px;
+    top: -40px;
     z-index: 5;
 }
 
@@ -98,7 +108,8 @@ header .nav-link {
     top:0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
+    padding: 25px 25px 
 }
 
 
@@ -156,13 +167,61 @@ header .nav-link {
     margin: 0px -10px;
 }
 
+.ENGLISHboximg {
+    width: 215px;
+    height: 120px;
+    top: 3%;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.CONNECTIONboximg {
+    width: 215px;
+    height: 120px;
+    top: 20%;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.TICKETboximg {
+    width: 215px;
+    height: 120px;
+    top: 39%;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.TRANSFORMboximg {
+    width: 215px;
+    height: 120px;
+    top: 56%;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.ENROLboximg {
+    width: 215px;
+    height: 120px;
+    top: 75%;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+
 .ENGLISHbox {
     width: 175px;
     height: 60px;
     top: 5%;
     right: 20px;
     position: absolute;
-    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    background: linear-gradient(to left, #008300 30%, #99ff66 100%);
     border: 2px solid white;
     border-radius: 30px;    
     z-index: 1;
@@ -175,7 +234,7 @@ header .nav-link {
     top: 20%;
     right: 20px;
     position: absolute;
-    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    background: linear-gradient(to left, #008300 30%, #99ff66 100%);
     border: 2px solid white;
     border-radius: 30px;
     z-index: 1;
@@ -188,7 +247,7 @@ header .nav-link {
     top: 35%;
     right: 20px;
     position: absolute;
-    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    background: linear-gradient(to left, #008300 30%, #99ff66 100%);
     border: 2px solid white;
     border-radius: 30px;
     
@@ -201,7 +260,7 @@ header .nav-link {
     top: 51%;
     right: 20px;
     position: absolute;
-    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    background: linear-gradient(to left, #008300 30%, #99ff66 100%);
     border: 2px solid white;
     border-radius: 30px;
     
@@ -214,7 +273,7 @@ header .nav-link {
     top: 66%;
     right: 20px;
     position: absolute;
-    background: linear-gradient(to left, #009933 5%, #99ff66 85%);
+    background: linear-gradient(to left, #008300 30%, #99ff66 100%);
     border: 2px solid white;
     border-radius: 30px;
     
@@ -343,23 +402,31 @@ header .nav-link {
     height: 100%;
 }
 
-.carousel .carousel-inner .container2 {
+ .carousel .carousel-inner .container2 {
+    /* background-image:url(../images/f6.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background-size: 300px 450px; */
     float: left;
     width: 50%;
     height: 100%;
-    padding: 75px 20px;
-    background-color: #051F46;    
+    padding: 0px 0px;
+    background-color: #070B4B;     
     z-index: 500;
-}
+} 
+
+/* 
+.carousel .carousel-inner .container2 {
+} */
 
 #range-logo {
-    background-image:url(../images/play-marker-02.png);
-    display:block;
-    background-size: 250px;
+    display:inline-block;
+    background-size: 300px 450px;
     background-repeat: no-repeat;
     background-position: center;
     height:100%;
     width:100%;
+    z-index: 500;
 }
 
 .carousel .carousel-inner .container2 h1 {
@@ -391,7 +458,6 @@ header .nav-link {
     text-align: center;
     
 }
-
 .maincont .slogan-container h1 span {
     width: 100%;
     height: 80px;
@@ -400,6 +466,153 @@ header .nav-link {
     font-weight: 600;    
     font-family: 'Pinyon Script', cursive;
 }
+
+.Admission {
+    width: 100%;
+    height: 280px;    
+    background-color: #008300;
+    position: relative;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.Admission h1 span{
+    width: 100%;
+    height: 250px;    
+    background-color: #008300;
+    position: relative;
+    text-align: center;
+    margin: 25px 0px;    
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 600;    
+    color: #FFFFFF;
+    text-decoration: underline;
+    margin: 25px 0px ;
+
+}
+
+
+.Admission img{
+    width: 450px;
+    height: 230px;
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+
+
+.Admission h1{
+    font-style: normal;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 600;    
+    color: #FFFFFF;
+    
+}
+
+
+.Admission .Apply  {
+    width: 600px;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    margin: 35px 0px 0px;
+    text-align: left;
+}
+
+
+.Admission .Apply h1{
+    font-style: normal;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;    
+
+    font-style: normal;
+
+    color: #070B4B;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.Admission .Apply p{
+    width: 100%;    
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;    
+    color: #FFFFFF;
+    padding: 10px 0px ;
+}
+
+
+.Admission .Apply .appliya{
+    width: 85px;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 700;    
+    background: linear-gradient(to left, #070B4B 00%, #99ff66 100%);
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 25px 25px 25px 25px;
+    margin: 15px 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+.Admission .Apply .social-icons {
+    width: 100%;
+    height: 100%;    
+    padding: 0px 0px;
+    text-align: center;
+    display: inline-block;
+}
+
+.Admission .Apply .social-icons ul {
+    width: 100%;
+    display: block;
+}
+
+.Admission .Apply .social-icons ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.Admission .Apply .social-icons ul li a {
+    display: block;
+    width: 50px;
+    height: 30px;
+    line-height: 24px;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    font-size: 20px;
+    border-radius: 20%;
+    background: linear-gradient(to left, #fff 00%, #99ff66 100%);
+}
+
+.Admission .Apply .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+#square {
+    list-style-type: square;
+  }
+
+
+  .mainitemlt {
+    padding: 25px;
+}
+.mainitemrt {
+    padding: 25px;
+}
+.middleimg {
+    padding: 20px;
+}
+
 
 .logins {
     margin: 55px 20px;
@@ -495,7 +708,7 @@ header .nav-link {
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     line-height: 48px;
-    color: honeydew;
+    color: #FFFFFF;
     margin: 15px 0px;
     text-align: center;
     background-image: url(../images/why-igcse-bigx.png);
@@ -511,12 +724,84 @@ img.vimg {
     padding: 0px 5px;
 }
 
-.videos .vh1 h1 {
-    color: #051F46;
+.videos  h1 {
+    color: #070B4B;
     font-size: 36px;
     font-weight: 700;
+    margin-top: 35px;
 }
 
+.middleimg1 {
+    width: 200px;
+    height: 130px;
+    top: 0;
+    left: 0;
+    margin-top: 20px ;
+}
+.middleimg1 img {
+    width: 200px;
+    height: 130px;
+    padding: 1px 1px 1px 1px ;
+}
+
+.middleimg2 {
+    width: 200px;
+    height: 130px;
+    top: 0;
+    right: 0;
+    margin-top: 20px ;
+}
+
+.middleimg2 img {
+    width: 200px;
+    height: 130px;
+    padding: 1px 1px 1px 1px ;
+}
+
+.middleimg3 {
+    width: 200px;
+    height: 130px;
+    top: 50%;
+    left: 50%;
+}
+
+.middleimg3 img {
+    width: 200px;
+    height: 130px;
+    padding: 1px 1px 1px 1px ;
+}
+
+.middleimg4 {
+    width: 200px;
+    height: 130px;
+    top: 50;
+    right: 0;
+}
+
+.middleimg4 img {
+    width: 200px;
+    height: 130px;
+    padding: 2px;
+    padding: 1px 1px 1px 1px ;
+}
+
+.FullWidthRowNews2{
+    width: 100%;
+    height: 250px;
+    float: left;
+    position:relative;
+    margin-top: 60px;
+}
+
+.FullWidthRowNews2 .navbar-about{
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.FullWidthRowNews2 .navbar-about .head-color{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
 .achievements-container{
     width: 100%;
     height: 500px;
@@ -524,7 +809,7 @@ img.vimg {
 article#achievements {
     margin: 0px 0px;
     padding: 0px 0px;
-    background-image:url(../images/achievements-bg.jpg);
+    background-image:url(../images/why-iqra-clear.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -547,43 +832,53 @@ article#achievements {
     text-align: center;
     position: relative;
 } 
+
 .infos{
     text-align: center;
     margin: 40px 0px;
 } 
+
+
+
 .whyus {
-    background-color:#051F46;
+    /* background-image: url(../images/camb.jpg); */
+    background-color: #070B4B;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     line-height: 24px;
-    color: honeydew;
+    color: #e9ecef;
+    font-weight: 900;
     margin: 0px 0px;
     padding: 20px 0px;
     text-align: center;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
+
 .whyus h5{
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 30px;
-    color: honeydew;
+    color: #e9ecef;
     margin: 0px 0px;
     padding: 0px 0px;
     text-align: left;
     position: relative;
 }
+
 .whyus .whTitle p{
-    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 26px;
-    color: honeydew;
+    font-weight: 500;
     margin: 0px 0px;
     padding: 10px 0px;
     text-align: center;
     position: relative;
+    color: #e9ecef;
 }
 
 .whyus .whTitleD p{
@@ -591,7 +886,7 @@ article#achievements {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 26px;
-    color: honeydew;
+    color: #e9ecef;
     margin: 0px 0px;
     padding: 20px 0px;
     text-align: left;
@@ -604,12 +899,12 @@ article#achievements {
     margin: 0px 20px;
 }
 
-.achievements-container h4{
+m.achievements-container h4{
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
     line-height: 36px;
-    color: honeydew;
+    color: #e9ecef;
 }
 
 .achievements-container .counter{
@@ -651,6 +946,7 @@ article#achievements {
 
 footer {
     position: relative;
+    background-color: #008300;
 }
 
 .address p {
@@ -662,48 +958,16 @@ footer {
     margin: 20px 0px;
 
 }
-/* 
-.social-icons {
-    width: 100%;
-    padding: 40px 0px;
-    text-align: center;
-    display: inline-block;
+
+
+#sloganopen {
+    display: none;
 }
 
-.social-icons ul {
-    width: 100%;
-    display: block;
-}
+#sloganopened {
+    background-image: url(../images/camb.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
-.social-icons ul li {
-    list-style: none;
-    display: inline-block;
 }
-
-.social-icons ul li a {
-    display: block;
-    width: 60px;
-    height: 60px;
-    line-height: 70px;
-    border-radius: 100%;
-    margin: 0px 15px;
-    background: #eee;
-    font-size: 35px;
-}
-
-.social-icons ul li a:hover {
-    color: #fff;
-    background: #007237;
-}
-
-.social-icons ul li a .fa-facebook {
-    color: blue;
-}
-
-.social-icons ul li a .fa-youtube {
-    color: blue;
-}
-
-.social-icons ul li a .fa-twitter {
-    color: green;
-} */
