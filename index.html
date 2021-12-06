@@ -20,6 +20,11 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/stickup.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script src="js/stickUp.min.js"></script>
     <title>School | Home</title>
 </head>
 
@@ -27,58 +32,85 @@
     <div class="container-fluid maincont">
         <!-- Main Header -->
         <!-- Top bar start -->
-
+        <!-- <div class="container">
+            <div class="row">
+            </div>
+        </div> -->
         <div class="row">
+
             <div class="headertop">
-                <div class="leftside">
-                    <P>left side</P>
-                    <div id="imgcontainer" class="imgcontainer">
+                <div class="row">
+                    <div class="leftside">
+                        <P>left side</P>
+                    </div>
+                    <div id="top-main-linkbar" class="rightside navbar-right-hide top-main-linkbar">
+                        <div class="container-topmargin">
+                            <nav id="navbar_top"
+                                class="navbartop nav navbar-right navbar-expand-lg navbar-right-topheader">
+                                <ul class="navbar-nav me-auto mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-linktop active" aria-current="page" href="#">
+                                            <i class="fa fa-home"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-linktop" aria-current="page" href="#">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-linktop" aria-current="page" href="#">
+                                            courses
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-linktop" aria-current="page" href="#">
+                                            admission
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-linktop contactus" aria-current="page" href="#">
+                                            ContactUs
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-linktop" aria-current="page" href="#">
+                                            login
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-linktop" aria-current="page" href="#">
+                                            en
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-linktop" aria-current="page" href="#">
+                                            bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div id="imgcontainer" class="imgcontainer wow bounceInDown" data-wow-duration="1s">
                         <img class="overlay" src="images/finallogotransparent.png" alt="stickylogo">
                     </div>
-                </div>
-                <div class="rightside">
 
-                    <div class="social-icons">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/youtube.png" alt="youtube" width="20px" height="20px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/instagram.png" alt="instagram" width="20px" height="20px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/emailf.jpg" alt="email" width="20px" height="20px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/whatsapp.png" alt="whatsapp" width="20px" height="20px">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-
         </div>
-
         <!-- top bar end -->
         <!-- Menu Start -->
         <div class="row">
-            <nav id="navbar_top" class="navbar navbar-expand-lg navbar-lightx bg-lightx">
+            <nav id="navbar_top" class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <img src="images/finallogo.png" alt="brandlogo" class="brandlogo"></a>
+                    <img src="images/logo_q.png" alt="brandlogo" class="brandlogo_1 wow bounceInDown"
+                        data-wow-duration="1s" data-wow-delay="1s"><span class="brandlogo_2">ueensAcademy</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -87,35 +119,25 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto offset-1 mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                About
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">IQRA</a></li>
-                                <li><a class="dropdown-item" href="#">MENTESSORI</a></li>
-                                <li><a class="dropdown-item" href="#">CLASSES</a></li>
-                                <li><a class="dropdown-item" href="#">OUR TEAM</a></li>
-                            </ul>
-                        </li> -->
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">OUR SCHOOL</a>
+                                <a class="nav-link" href="#">Learn practical English</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">SENIOR SCHOOL</a>
+                                <a class="nav-link" href="#">Australia in Games</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">JUNIOR SCHOOL</a>
+                                <a class="nav-link" href="#">Why Kabir is true</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">BOARDING</a>
+                                <a class="nav-link" href="#">transform connects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ONLINE ENROLMENT</a>
+                                <a class="nav-link" href="#">teen ding</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Juzz amma</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Daar e Ayesha</a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -135,23 +157,23 @@
         <div class="row">
             <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <img src="images/LOGO_Eng.png" alt="" class="ENGLISHboximg">
+                    <img src="images/LOGO_Eng.png" alt="" class="ENGLISHboximg" hidden>
                     <div class="ENGLISHbox" hidden>
                         <span>ENGLISH</span>
                     </div>
-                    <img src="images/LOGO_Connect.png" alt="" class="CONNECTIONboximg">
+                    <img src="images/LOGO_Connect.png" alt="" class="CONNECTIONboximg" hidden>
                     <div class="CONNECTIONbox" hidden>
                         <span>CONNECTION</span>
                     </div>
-                    <img src="images/LOGO_Ticket.png" alt="" class="TICKETboximg">
+                    <img src="images/LOGO_Ticket.png" alt="" class="TICKETboximg" hidden>
                     <div class="TICKETbox" hidden>
                         <span>TICKET</span>
                     </div>
-                    <img src="images/LOGO_Transform.png" alt="" class="TRANSFORMboximg">
+                    <img src="images/LOGO_Transform.png" alt="" class="TRANSFORMboximg" hidden>
                     <div class="TRANSFORMbox" hidden>
                         <span>TRANSFORM</span>
                     </div>
-                    <img src="images/LOGO_Enrol.png" alt="" class="ENROLboximg">
+                    <img src="images/LOGO_Enrol.png" alt="" class="ENROLboximg" hidden>
                     <div class="ENROLbox" hidden>
                         <span>ENROL ONLINE</span>
                     </div>
@@ -177,12 +199,12 @@
                         <!--  -->
                         <a href="http://ran.ge/" title="Professional WordPress Development">
                             <img src="images/F6.jpg" alt="" id="range-logo">
+
                             <h1>
                                 Another Studentcare<br>landmark
                             </h1>
                             <p>JCI acceditation reaffirms our school and school networks commitment to student care</p>
                             <h2>QUALITY STUDENTCARE</h2>
-
                         </a>
 
 
@@ -364,35 +386,52 @@
             </section>
         </div>
         <!-- slogan -->
-
-                <!-- Our programes -->
+        <div class="row">
+            <section id="slogan-container" class="slogan-container">
+                <div class="leftside">
+                    <h1><span>Share this
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true" style="color:#00023d"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-youtube" aria-hidden="true" style="color:#00023d"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true" style="color:#00023d"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-whatsapp" aria-hidden="true" style="color:#00023d"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-envelope" aria-hidden="true" style="color:#00023d"></i>
+                            </a>
+                        </span>
+                    </h1>
+                </div>
+                <div class="rightside">
+                    <h1><span>
+                            
+                            Share this
+                                vedio
+                            <a href="#">
+                                <i class="fa fa-video-camera" aria-hidden="true" style="color:#00023d"></i>
+                            </a>
+                        </span>
+                    </h1>
+                </div>
+            </section>
+        </div>
+        <!-- Our programes -->
         <!-- section videos -->
 
         <div class="row">
 
             <section class="videos">
-                <div class="row" hidden>
-                    <h1>Our programes</h1>
-                </div>
-                <div class="row" hidden>
-                    <div class="col-lg-3 img1">
-                        <img src="images/why-igcse-big.png" alt="" class="vimg">
-                    </div>
-                    <div class="col-lg-3 img1">
-                        <img src="images/why-iqra-clear.png" alt="" class="vimg">
-                    </div>
-                    <div class="col-lg-3 img1">
-                        <img src="images/why-islamic-clear.png" alt="" class="vimg">
-                    </div>
-                    <div class="col-lg-3 img1">
-                        <img src="images/why-montessori-clear.png" alt="" class="vimg">
-                    </div>
-                </div>
 
                 <!--Desktop View Start -->
                 <div class="col-md-12 col-sm-12 col-xs-12 ">
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12 text-center text-uppercase vh1 bg-white">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center text-uppercase bg-white">
                             <h1>Our Programmes</h1>
                         </div>
                     </div>
@@ -475,12 +514,13 @@
                         </div>
                     </div>
                 </div>
+            </section>
         </div>
         <!--Desktop View END -->
 
 
         <!-- Admission open -->
-        <div class="row">
+        <div class="row" hidden>
             <section class="Admission">
                 <article id="sloganopen">
                     <p>
@@ -503,31 +543,7 @@
                                     <a href="#" class="appliya">Apply Now ></a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="social-icons">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-youtube" aria-hidden="true" style="color:red"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-instagram" aria-hidden="true" style="color:red"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-whatsapp" aria-hidden="true"
-                                                        style="color:deepskyblue"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+
                                 </div>
 
                             </div>
@@ -554,7 +570,8 @@
                                 Schools can shape a Cambridge curriculum around how they want their students to learn,
                                 <br>
                                 helping them discover new abilities and a wider world. Cambridge students <br>
-                                develop the skills they need to achieve at school, university and work.</p>
+                                develop the skills they need to achieve at school, university and work.
+                            </p>
                         </div>
                         <br>
                         <div class="row">
@@ -641,7 +658,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/logo-qld-aust (1).png" alt="brandlogo"
+                                    <a href="index.html"><img src="images/finallogotransparent.png" alt="brandlogo"
                                             width="220px" height="150px"></a>
                                 </div>
 
@@ -709,7 +726,6 @@
 
     <!-- footer end-->
     <!-- Optional JavaScript; choose one of the two! -->
-
     <script type="text/javascript">
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
@@ -717,7 +733,7 @@
                 document.getElementById("imgcontainer").style.top = "-450px";
                 // document.getElementById("imgcontainer").hide();
             } else {
-                document.getElementById("imgcontainer").style.top = "-40px";
+                document.getElementById("imgcontainer").style.top = "-50px";
             }
         }
 
@@ -751,6 +767,19 @@
             document.getElementById('sloganopened').show();
         });
     </script>
+
+    <script type="text/javascript">
+        //initiating jQuery
+        jQuery(function ($) {
+            $(document).ready(function () {
+                //enabling stickUp on the '.navbar-wrapper' class
+                $('.navbar-wrapper').stickUp();
+            });
+        });
+
+    </script>
+
+
     <!-- 
     <script type="text/javascript">
 
@@ -781,6 +810,11 @@ document.querySelector('mouseenter', function () {
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
