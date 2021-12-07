@@ -221,7 +221,7 @@ img.brandlogo_1{
     opacity: 58%;
     top: 105px;
     width: 360px;
-    height: 330px;
+    height: 350px;
     z-index: 500;
 }
 
@@ -233,6 +233,14 @@ img.brandlogo_1{
     height: 330px;
     padding: 25px 25px;
     z-index: 500;
+}
+
+.headertop .imgcontainer .overlay_1 {
+    position: relative;
+    top: -35px;
+    left: 0;
+    width: 350px;
+    z-index: 501;
 }
 
 .carousel {
