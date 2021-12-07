@@ -80,14 +80,13 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-linktop" aria-current="page" href="#">
-                                            en
+                                            <span class="header__language-text">EN</span>
+                                            <span class="header__language-icon">
+                                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                            </span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-linktop" aria-current="page" href="#">
-                                            bangla
-                                        </a>
-                                    </li>
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -108,9 +107,9 @@
             <nav id="navbar_top" class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/finallogo.png" alt="brandlogo" class="brandlogo"></a>
-                    <img src="images/logo_q.png" alt="brandlogo" class="brandlogo_1 wow bounceInDown"
-                        data-wow-duration="1s" data-wow-delay="1s"><span class="brandlogo_2">ueensAcademy</span></a>
+                        <img src="images/finallogo.png" alt="brandlogo" class="brandlogo" id="brandlogo"></a>
+                    <img src="images/logo_q.png" alt="brandlogo" class="brandlogo_1 wow bounceInDown" id="brandlogo_1"
+                        data-wow-duration="1s" data-wow-delay="1s"><span id="brandlogo_2" class="brandlogo_2">ueensAcademy</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -119,13 +118,13 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto offset-1 mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Learn practical English</a>
+                                <a class="nav-link" href="#">Practical English</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Australia in Games</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Why Kabir is true</a>
+                                <a class="nav-link" href="#">WhyKabir istrue</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">transform connects</a>
@@ -139,15 +138,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Daar e Ayesha</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mental Health</a>
+                            </li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
+                        <!-- <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item " hidden>
                                 <a class="nav-link" href="#">CONTACT</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">LOGIN</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </nav>
@@ -658,7 +660,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/finallogotransparent.png" alt="brandlogo"
+                                    <a href="index.html"><img src="images/finallogotransparent.png" alt="brandlogotransparent"
                                             width="220px" height="150px"></a>
                                 </div>
 
@@ -733,7 +735,7 @@
                 document.getElementById("imgcontainer").style.top = "-450px";
                 // document.getElementById("imgcontainer").hide();
             } else {
-                document.getElementById("imgcontainer").style.top = "-50px";
+                document.getElementById("imgcontainer").style.top = "105px";
             }
         }
 
@@ -742,16 +744,33 @@
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
             window.addEventListener('scroll', function () {
-                if (window.scrollY > 50) {
+                if (window.scrollY > 20) {
                     document.getElementById('navbar_top').classList.add('fixed-top');
-                    // add padding top to show content behind navbar
+                    // add padding top to show content behind navbar navbar_height
                     navbar_height = document.querySelector('.navbar').offsetHeight;
-                    document.body.style.paddingTop = navbar_height + 'px';
+                    document.body.style.paddingTop =  '105px';
                     //document.body.style.position = "Fixed"
+                    document.getElementById('brandlogo').classList.add('brandlogoshow');
+                    document.getElementById('brandlogo_1').show();
+                    document.getElementById('brandlogo_2').show();
+                    
+                    document.getElementById('brandlogo').classList.remove('brandlogoshow');
+                    document.getElementById('brandlogo').classList.add('brandlogohide');
+                    document.getElementById('brandlogo_1').hide();
+                    document.getElementById('brandlogo_2').hide();
                 } else {
                     document.getElementById('navbar_top').classList.remove('fixed-top');
                     // remove padding top from body
                     document.body.style.paddingTop = '0';
+                    document.getElementById('brandlogo').classList.add('brandlogoshow');
+                    document.getElementById('brandlogo_1').show();
+                    document.getElementById('brandlogo_2').show();
+                    
+                    document.getElementById('brandlogo').classList.remove('brandlogoshow');
+                    document.getElementById('brandlogo').classList.add('brandlogohide');
+                    document.getElementById('brandlogo_1').hide();
+                    document.getElementById('brandlogo_2').hide();
+                    
                 }
             });
         });
