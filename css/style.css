@@ -286,7 +286,7 @@ img.brandlogo_1{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     opacity: 58%;
-    top: 0px;
+    top: -30px;
     width: 360px;
     height: 350px;
     z-index: 500;
