@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/stickup.css">
     <link rel="stylesheet" href="css/animate.css">
 
-    <script src="js/stickUp.min.js"></script>
+    <!-- <script src="js/stickUp.min.js"></script> -->
     <title>School | Home</title>
 </head>
 
@@ -41,7 +41,7 @@
             <div class="headertop">
                 <div class="row">
                     <div class="leftside">
-                        <P>left side</P>
+                        <P></P>
                     </div>
                     <div id="top-main-linkbar" class="rightside navbar-right-hide top-main-linkbar">
                         <div class="container-topmargin">
@@ -78,7 +78,7 @@
                                             login
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item langEN">
                                         <a class="nav-linktop" aria-current="page" href="#">
                                             <span class="header__language-text">EN</span>
                                             <span class="header__language-icon">
@@ -86,7 +86,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                    
+
                                 </ul>
                             </nav>
                         </div>
@@ -96,7 +96,7 @@
                 <div class="row">
                     <div id="imgcontainer" class="imgcontainer wow bounceInDown" data-wow-duration="1s">
                         <img class="overlay" src="images/finallogotransparent.png" alt="stickylogo">
-                        <img class="overlay_1"  src="images/transparentimage_2.png" alt="">
+                        <img class="overlay_1" src="images/transparentimage_2.png" alt="stickylogo_1">
                     </div>
 
                 </div>
@@ -106,18 +106,21 @@
         <!-- Menu Start -->
         <div class="row">
             <nav id="navbar_top" class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/finallogo.png" alt="brandlogo" class="brandlogo" id="brandlogo"></a>
-                    <img src="images/logo_q.png" alt="brandlogo" class="brandlogo_1 wow bounceInDown" id="brandlogo_1"
-                        data-wow-duration="1s" data-wow-delay="1s"><span id="brandlogo_2" class="brandlogo_2">ueensAcademy</span></a>
+                <div class="container-fluid">
+                    <a class="navbar-brand" id ="brandlogo" href="index.html">
+
+                        <img src="images/logo_q.png" alt="brandlogo" class="brandlogo_1 wow bounceInDown"
+                            id="brandlogo_1" data-wow-duration="1s" data-wow-delay="1s">
+                        <span id="brandlogo_2" class="brandlogo_2">ueen's</span>
+                        <span id="brandlogo_3" class="brandlogo_3">Academy</span>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto offset-1 mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto offset-2 mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Practical English</a>
                             </li>
@@ -413,9 +416,9 @@
                 </div>
                 <div class="rightside">
                     <h1><span>
-                            
+
                             Share this
-                                vedio
+                            vedio
                             <a href="#">
                                 <i class="fa fa-video-camera" aria-hidden="true" style="color:#00023d"></i>
                             </a>
@@ -661,8 +664,8 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/finallogotransparent.png" alt="brandlogotransparent"
-                                            width="220px" height="150px"></a>
+                                    <a href="index.html"><img src="images/finallogotransparent.png"
+                                            alt="brandlogotransparent" width="220px" height="150px"></a>
                                 </div>
 
                                 <div class="address">
@@ -729,14 +732,34 @@
 
     <!-- footer end-->
     <!-- Optional JavaScript; choose one of the two! -->
+
+    <script>
+        $(document).scroll(function () {
+
+        });
+    </script>
+
     <script type="text/javascript">
         window.onscroll = function () { scrollFunction() };
+        mybrand = document.getElementById("brandlogo");
+        var muScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 100) {
+                mybrand.className = "navbar-brand brandlogoshow";
+            }
+            else {
+                mybrand.className = "navbar-brand brandlogohide";
+            }
+        };
+
+        window.addEventListener("scroll", muScrollFunc);
+
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("imgcontainer").style.top = "-450px";
                 // document.getElementById("imgcontainer").hide();
             } else {
-                document.getElementById("imgcontainer").style.top = "105px";
+                document.getElementById("imgcontainer").style.top = "0px";
             }
         }
 
@@ -749,29 +772,15 @@
                     document.getElementById('navbar_top').classList.add('fixed-top');
                     // add padding top to show content behind navbar navbar_height
                     navbar_height = document.querySelector('.navbar').offsetHeight;
-                    document.body.style.paddingTop =  '105px';
+                    document.body.style.paddingTop = '105px';
                     //document.body.style.position = "Fixed"
-                    document.getElementById('brandlogo').classList.add('brandlogoshow');
-                    document.getElementById('brandlogo_1').show();
-                    document.getElementById('brandlogo_2').show();
-                    
-                    document.getElementById('brandlogo').classList.remove('brandlogoshow');
-                    document.getElementById('brandlogo').classList.add('brandlogohide');
-                    document.getElementById('brandlogo_1').hide();
-                    document.getElementById('brandlogo_2').hide();
+
                 } else {
                     document.getElementById('navbar_top').classList.remove('fixed-top');
                     // remove padding top from body
                     document.body.style.paddingTop = '0';
-                    document.getElementById('brandlogo').classList.add('brandlogoshow');
-                    document.getElementById('brandlogo_1').show();
-                    document.getElementById('brandlogo_2').show();
-                    
-                    document.getElementById('brandlogo').classList.remove('brandlogoshow');
-                    document.getElementById('brandlogo').classList.add('brandlogohide');
-                    document.getElementById('brandlogo_1').hide();
-                    document.getElementById('brandlogo_2').hide();
-                    
+
+
                 }
             });
         });

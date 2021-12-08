@@ -139,22 +139,14 @@ a:hover {
 
 /*****************CSS for Logo & Global Navigation Div*******************/
 .header__language-icon{
-    font-size: 25px;
-}
-
-#brandlogoshow{
-    display: block;   
-}
-
-#brandlogohide{
-    display: none;   
+    font-size: 16px;
 }
 
 .navbar {
     position: relative;
     margin: 0px 0px;
     padding: 0px 0px;
-    height: 115px;
+    height: 140px;
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
     /* font-family:Open Sans,Lucida sans, Arial !important; */
@@ -166,38 +158,80 @@ a:hover {
     transition: all 0.4s;
 }
 
+.navbar-brand  {
+    
+    background: url(../images/finallogo.png) no-repeat;
+    background-size:130px;
+    width: 180px;
+    height: 130px;
+    
+    opacity: 0;
+}
+
+.brandlogoshow{
+    opacity: 1;
+    left:0;
+}
+
+.brandlogohide{
+    opacity: 0;
+    left:-250px;
+}
+
+/* 
 .navbar-brand .brandlogo {
     width: 130px;
     height: 130px;
     padding: 14px 14px;
     
-} 
+}  */
 
 img.brandlogo_1{
     position: relative;
+    left: 140px;
+    top: 25px;
+    height: 36px;
     margin: 0px 0px;
     padding: 0px 0px;
-    height: 35px;
-    font-size: 14px;
-    line-height: 20px;
     background-color: #FFFFFF;
-    font-family:fantasy;
-    text-transform: lowercase;
-    font-weight: 600;
     
     transition: all 0.4s;
 }
 
-.brandlogo_2{ 
-    width: 120px;
+.navbar .navbar-brand .brandlogo_2{ 
+    position: relative;
+    left: 140px;
+    top: 30px;
+    font-size: 35px;
+
     padding: 25px 0px;
-    font-family:fantasy;
+    font-family:CentSchbook BT;
     text-transform:uppercase;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 900;
+    color: black;
+}
+
+.navbar .navbar-brand .brandlogo_3{ 
+    position: relative;
+    left: -26px;
+    top: 62px;
+    font-size: 30px;
+
+    padding: 25px 0px;
+    font-family:Palatino;
+    text-transform:uppercase;
+    font-weight: 900;
+    color: black;
 
 }
 
+.langEN1 {
+    background-color: #fff;
+    padding: 2px 6px;
+    border-radius: 1rem;
+    height: initial;
+    
+}
 
 .home {
     font-style: normal;
@@ -219,7 +253,7 @@ img.brandlogo_1{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     opacity: 58%;
-    top: 105px;
+    top: 115px;
     width: 360px;
     height: 350px;
     z-index: 500;
