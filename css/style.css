@@ -147,7 +147,8 @@ a:hover {
     margin: 0px 0px;
     padding: 0px 0px;
     height: 140px;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family:CentSchbook BT;
     background-color: #FFFFFF;
     /* font-family:Open Sans,Lucida sans, Arial !important; */
     text-transform: capitalize;
@@ -308,6 +309,23 @@ img.brandlogo_1{
     top: -35px;
     left: -10px;
     width: 350px;
+    z-index: 501;
+}
+
+.headertop .imgcontainer .overlay_2{
+    position: relative;
+    top: -65px;
+    left: 45px;
+    width: 60px;
+    z-index: 501;
+}
+
+
+.headertop .imgcontainer .overlay_3{
+    position: relative;
+    top: -65px;
+    left: 165px;
+    width: 60px;
     z-index: 501;
 }
 
