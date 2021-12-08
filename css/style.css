@@ -182,7 +182,7 @@ img.brandlogo_1{
     position: relative;
     left: 140px;
     top: 25px;
-    height: 36px;
+    height: 46px;
     margin: 0px 0px;
     padding: 0px 0px;
     background-color: #FFFFFF;
@@ -220,9 +220,9 @@ img.brandlogo_1{
 /*-------------2ND VERSION---------------*/
 img.brandlogo_1{
     position: relative;
-    left: 140px;
+    left: 145px;
     top: 25px;
-    height: 36px;
+    height: 42px;
     margin: 0px 0px;
     padding: 0px 0px;
     background-color: #FFFFFF;
@@ -250,7 +250,8 @@ img.brandlogo_1{
     font-size: 30px;
 
     padding: 25px 0px;
-    font-family:Palatino;
+    /* font-family:Palatino; */
+    font-family:CentSchbook BT;
     text-transform:uppercase;
     font-weight: 900;
     color: black;
