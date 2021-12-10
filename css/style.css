@@ -51,14 +51,14 @@ a:hover {
 
 
 .headertop .leftside {
-    width: 40%;
+    width: 54%;
     height: 100%;
     float: left;
     color: #99ff66;
 }
 
 .headertop .rightside {
-    width: 60%;
+    width: 46%;
     height: 100%;
     float: left;
 }
@@ -77,6 +77,9 @@ a:hover {
     transition: all 0.4s;
 }
 
+.container-topmargin .navbartop .fa-home{
+    font-size: 22px;
+}
 /* .container-topmargin .navbartop .contactus ul li{
     width: 50px;
 } */
@@ -152,9 +155,9 @@ a:hover {
     background-color: #FFFFFF;
     /* font-family:Open Sans,Lucida sans, Arial !important; */
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 1.3em;
     line-height: 20px;
-    font-weight: 600;
+    font-weight: 400;
     
     transition: all 0.4s;
 }
@@ -315,7 +318,7 @@ img.brandlogo_1{
 .headertop .imgcontainer .overlay_2{
     position: relative;
     top: -65px;
-    left: 45px;
+    left: 40px;
     width: 60px;
     z-index: 501;
 }
@@ -422,7 +425,7 @@ img.brandlogo_1{
     float: left;
     height: 30px;
     
-    background-color: darkgray;
+    background-color: #008300;
     position: relative;
     text-align: center;
     margin: 0px 0px 0px;
@@ -450,13 +453,111 @@ img.brandlogo_1{
 
 .maincont .slogan-container h1 span {
     font-family: "effra" !important;
-    font-size: 12px !important;
-    line-height: 22px !important;
+    font-size: 20px !important;
+    line-height: 32px !important;
+
+    color: #FFFFFF;
+    font-weight: 900;
+
 }
 .maincont .slogan-container h1 span a {
     font-size: 12px;
     padding: 3px;
 }
+
+/***** 2nd  start *******/ 
+
+.slogan-container1 {
+    float: left;
+    height: 30px;
+    
+    background-color: #00023D;
+    position: relative;
+    text-align: center;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 5px; 
+    color: #30D8A8;
+}
+
+.slogan-container1 .leftside{
+    width: 50%;
+    float: left;
+    margin: -15px 0px 0px;
+    position: relative;
+    display: block;
+}
+.slogan-container1 .rightside{
+    width: 50%;
+    float: left;
+    margin: -15px 0px 0px;
+    position: relative;
+    display: block;
+}
+
+.slogan-container1 .rightside h1 span{
+    margin-top: 0px;
+}
+
+.maincont .slogan-container1 h1 span {
+    font-family: "effra" !important;
+    font-size: 20px !important;
+    line-height: 32px !important;
+    font-weight: 900;
+}
+.maincont .slogan-container1 h1 span a {
+    font-size: 12px;
+    padding: 3px;
+    color: #30D8A8;
+}
+
+/***** 2nd   *******/ 
+
+
+/***** 3rd  start *******/ 
+.slogan-container2 {
+    float: left;
+    height: 30px;
+    
+    background-color: #30D8A8;
+    position: relative;
+    text-align: center;
+    margin: 0px 0px 0px;
+    padding: 0px 0px 5px;     
+}
+
+.slogan-container2 .leftside{
+    width: 50%;
+    float: left;
+    margin: -15px 0px 0px;
+    position: relative;
+    display: block;
+}
+.slogan-container2 .rightside{
+    width: 50%;
+    float: left;
+    margin: -15px 0px 0px;
+    position: relative;
+    display: block;
+}
+
+.slogan-container2 .rightside h1 span{
+    margin-top: 0px;
+}
+
+.maincont .slogan-container2 h1 span {
+    font-family: "effra" !important;
+    font-size: 20px !important;
+    line-height: 32px !important;
+    color: #00023D;
+    font-weight: 900;
+}
+.maincont .slogan-container2 h1 span a {
+    font-size: 12px;
+    padding: 3px;
+    
+}
+
+/***** 3rd   *******/ 
 
 
 .videos {
