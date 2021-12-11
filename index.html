@@ -825,13 +825,8 @@
 
     <!-- footer end-->
     <!-- Optional JavaScript; choose one of the two! -->
-
-    <script>
-        $(document).scroll(function () {
-
-        });
-    </script>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    
     <script type="text/javascript">
         window.onscroll = function () { scrollFunction() };
         mybrand = document.getElementById("brandlogo");
@@ -865,9 +860,8 @@
                     document.getElementById('navbar_top').classList.add('fixed-top');
                     // add padding top to show content behind navbar navbar_height
                     navbar_height = document.querySelector('.navbar').offsetHeight;
-                    document.body.style.paddingTop = '105px';
+                    document.body.style.paddingTop = '100px';
                     //document.body.style.position = "Fixed"
-
                 } else {
                     document.getElementById('navbar_top').classList.remove('fixed-top');
                     // remove padding top from body
@@ -890,16 +884,6 @@
         });
     </script>
 
-    <script type="text/javascript">
-        //initiating jQuery
-        jQuery(function ($) {
-            $(document).ready(function () {
-                //enabling stickUp on the '.navbar-wrapper' class
-                $('.navbar-wrapper').stickUp();
-            });
-        });
-
-    </script>
 
 
     <!-- 
