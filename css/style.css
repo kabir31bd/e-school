@@ -496,16 +496,18 @@ img.brandlogo_1{
 
 .slogan-container1 .rightside h1 span{
     margin-top: 0px;
+    
 }
 
 .maincont .slogan-container1 h1 span {
     font-family: "effra" !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     line-height: 32px !important;
     font-weight: 900;
+    letter-spacing: 1px;
 }
 .maincont .slogan-container1 h1 span a {
-    font-size: 12px;
+    font-size: 18px;
     padding: 3px;
     color: #30D8A8;
 }
@@ -522,7 +524,8 @@ img.brandlogo_1{
     position: relative;
     text-align: center;
     margin: 0px 0px 0px;
-    padding: 0px 0px 5px;     
+    padding: 0px 0px 5px;
+
 }
 
 .slogan-container2 .leftside{
@@ -532,6 +535,7 @@ img.brandlogo_1{
     position: relative;
     display: block;
 }
+
 .slogan-container2 .rightside{
     width: 50%;
     float: left;
@@ -542,6 +546,7 @@ img.brandlogo_1{
 
 .slogan-container2 .rightside h1 span{
     margin-top: 0px;
+    letter-spacing: 1px;
 }
 
 .maincont .slogan-container2 h1 span {
@@ -551,10 +556,10 @@ img.brandlogo_1{
     color: #00023D;
     font-weight: 900;
 }
+
 .maincont .slogan-container2 h1 span a {
     font-size: 12px;
-    padding: 3px;
-    
+    padding: 3px;    
 }
 
 /***** 3rd   *******/ 
